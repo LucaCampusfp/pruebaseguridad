@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"&gt;
+<head>
+    <meta charset="UTF-8">
+    <title>Productos del supermercado</title>
+</head>
+<body>
+<h1>Home page</h1>
+
+<p>
+    <a th:href="@{/login}">Iniciar sesión</a>
+    <a th:href="@{/logout}">Cerrar sesión</a>
+</p>
+
+<h4>
+    <span>Usuario actual: </span>
+    <span th:text="${usuario}"></span>
+</h4>
+
+<p>
+    <a href="/carrito">Ir al carrito de la compra</a>
+    <a href="/informacion">Ver información de ventas</a>
+</p>
+</body>
+</html>
